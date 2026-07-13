@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Ali Khan",
+    "age": 28,
+    "gender": "Male",
+    "blood_group": "B+",
+    "disease": "Fever",
+    "phone": "0301-1234567",
+    "city": "Lahore",
+    "admitted": false
+  },
+  {
+    "id": 2,
+    "name": "Ayesha Ahmed",
+    "age": 35,
+    "gender": "Female",
+    "blood_group": "O+",
+    "disease": "Diabetes",
+    "phone": "0312-7654321",
+    "city": "Karachi",
+    "admitted": true
+  },
+  {
+    "id": 3,
+    "name": "Usman Tariq",
+    "age": 42,
+    "gender": "Male",
+    "blood_group": "A-",
+    "disease": "Hypertension",
+    "phone": "0333-9876543",
+    "city": "Islamabad",
+    "admitted": false
+  },
+  {
+    "id": 4,
+    "name": "Fatima Noor",
+    "age": 24,
+    "gender": "Female",
+    "blood_group": "AB+",
+    "disease": "Migraine",
+    "phone": "0300-4567890",
+    "city": "Faisalabad",
+    "admitted": false
+  },
+  {
+    "id": 5,
+    "name": "Hamza Iqbal",
+    "age": 31,
+    "gender": "Male",
+    "blood_group": "O-",
+    "disease": "Asthma",
+    "phone": "0321-6549870",
+    "city": "Multan",
+    "admitted": true
+  },
+  {
+    "id": 6,
+    "name": "Sara Malik",
+    "age": 27,
+    "gender": "Female",
+    "blood_group": "A+",
+    "disease": "Allergy",
+    "phone": "0345-1122334",
+    "city": "Rawalpindi",
+    "admitted": false
+  },
+  {
+    "id": 7,
+    "name": "Bilal Hussain",
+    "age": 50,
+    "gender": "Male",
+    "blood_group": "B-",
+    "disease": "Arthritis",
+    "phone": "0311-9988776",
+    "city": "Peshawar",
+    "admitted": true
+  },
+  {
+    "id": 8,
+    "name": "Zainab Shah",
+    "age": 19,
+    "gender": "Female",
+    "blood_group": "AB-",
+    "disease": "Anemia",
+    "phone": "0309-5566778",
+    "city": "Quetta",
+    "admitted": false
+  },
+  {
+    "id": 9,
+    "name": "Ahmed Raza",
+    "age": 45,
+    "gender": "Male",
+    "blood_group": "O+",
+    "disease": "Kidney Stone",
+    "phone": "0322-7788990",
+    "city": "Sialkot",
+    "admitted": true
+  },
+  {
+    "id": 10,
+    "name": "Mariam Asif",
+    "age": 38,
+    "gender": "Female",
+    "blood_group": "A+",
+    "disease": "Thyroid",
+    "phone": "0336-4455667",
+    "city": "Gujranwala",
+    "admitted": false
+  }
+]
