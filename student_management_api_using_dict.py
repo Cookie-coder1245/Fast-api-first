@@ -31,7 +31,7 @@ class Student(BaseModel):
     city:str
 
 class StudentUpdate(BaseModel):
-    id:Optional[str]=None
+  
     name:Optional[str]=None
     age:Optional[int]=None
     city:Optional[str]=None
@@ -41,7 +41,7 @@ class StudentUpdate(BaseModel):
 @app.post('/add')
 def create_student(student:Student):
     if student.id  in students:
-        raise HTTPException(status_code=400,details="Student already found")
+        raise HTTPException(status_code=400,detail="Student already found")
     
     students[student.id]=student.model_dump(exclude=['id'])
     return {
@@ -52,13 +52,13 @@ def create_student(student:Student):
 
 #READ OPERATION 
 @app.get('/student')
-def retrive():
+def get_student():
     return students
 
 @app.get('/student/{student_id}')
-def retrieve(student_id):
+def retrieve(student_id:str):
     if student_id not in students:
-        raise HTTPException(status_code=400,details="Student deosnt exitst")
+        raise HTTPException(status_code=404,detail="Student deosnt exitst")
     return students[student_id]
 
 
@@ -66,7 +66,7 @@ def retrieve(student_id):
 @app.patch('/update/{student_id}')
 def update_student(student_id:str,student:StudentUpdate):
     if student_id not in students:
-        raise HTTPException(status_code=400,detail="Student deosnt exitst")
+        raise HTTPException(status_code=404,detail="Student deosnt exitst")
     
     if student.name is not None:
         students[student_id]['name']=student.name
@@ -103,7 +103,7 @@ def put_student(student_id:str,student:Student):
 
 #DELETE OPERATION 
 @app.delete('/delete/{student_id}')
-def delete_student(student_id):
+def delete_student(student_id:str):
     if student_id not in students:
         raise HTTPException(status_code=400,detail="Student deosnt exitst")
     
