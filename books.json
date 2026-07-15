@@ -1,0 +1,19 @@
+{
+    "B001": {
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "category": "Self Help",
+        "price": 1200,
+        "quantity": 5,
+        "language": "English"
+    },
+
+    "B002": {
+        "title": "Python Crash Course",
+        "author": "Eric Matthes",
+        "category": "Programming",
+        "price": 2500,
+        "quantity": 3,
+        "language": "English"
+    }
+}
